@@ -1,0 +1,94 @@
+.home body{
+    background-color:var(--color-gris-claro);
+}
+
+.home header{
+    background-color:var(--color-amarillo);
+    padding-bottom:15px;
+
+}
+.home header .logo{
+    width:170px;
+    padding:15px;
+}
+.home header .buscador{
+    padding-left:15px;
+}
+.home header .buscar{
+    border:Solid 2px var(--color-gris-oscuro);
+    background-color:var(--color-gris-claro);
+    display:inline-block;
+}
+.home header input{
+    display:inline-block;
+
+}
+.home header .cuotas{
+    text-align: center;
+    padding:15px 0;
+}
+
+
+.home header nav{
+    padding-bottom:20px;
+}
+
+.home header a{
+    list-style-type: none;
+    text-decoration:none;
+    color:black;
+    text-transform:capitalize;
+}
+
+.home header .burger-menu{
+    text-align:center;
+}
+.home header .burger-menu i{
+    background-color:var(--color-azul);
+    font-size:25px;
+    color:white;
+    padding:12px;
+    border-radius:5px;
+}
+
+.home main .banner{
+    display:none;
+}
+.home main article{
+    background-color:white;
+    margin:10px;
+}
+
+.home main h2{
+    font-size:var(--tam-titulo);
+    text-align:center;
+    padding:10px;
+}
+.home main .precio{
+    font-size:var(--tam-precio);
+}
+.home main .descuento{
+    font-size:var(--tam-descuento);
+}
+.home main h3{
+    font-size:var(--tam-descripcion);
+}
+.home main .imagen-producto{
+    width:300px;
+    text-align:center;
+}
+.home footer{
+    text-align:center;
+    background-color:white;
+    margin-top:30px;
+    border-top:solid 2px var(--color-gris-oscuro);
+    padding-top:20px;
+}
+.home footer article{
+    padding: 20px 30px;
+}
+.home footer .iconos i{
+    font-size:2em;
+    color:var(--color-azul);
+    margin-bottom:10px;
+}
