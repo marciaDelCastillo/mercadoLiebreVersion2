@@ -1,26 +1,44 @@
+.home{
+     width:100%;
+ }
+
 .home body{
     background-color:var(--color-gris-claro);
+    width:100%;
 }
 
 .home header{
     background-color:var(--color-amarillo);
     padding-bottom:15px;
-
+    width:100%;
+    display:block;
 }
 .home header .logo{
-    width:170px;
+    width:50%;
     padding:15px;
 }
+
 .home header .buscador{
-    padding-left:15px;
+    padding-left:20px;
 }
+
 .home header .buscar{
     border:Solid 2px var(--color-gris-oscuro);
     background-color:var(--color-gris-claro);
     display:inline-block;
+    height:50px;
+    width:50px;
+
+}
+.home header .buscar i{
+    font-size:30px;
+    padding:10px;
+    text-align:center;
 }
 .home header input{
-    display:inline-block;
+    padding-left:30px;
+    width:60vw;
+    height:50px;
 
 }
 .home header .cuotas{
@@ -32,6 +50,12 @@
 .home header nav{
     padding-bottom:20px;
 }
+.home header .site{
+    display:none;
+}
+.home header .login{
+    display:none;
+}
 
 .home header a{
     list-style-type: none;
@@ -42,6 +66,13 @@
 
 .home header .burger-menu{
     text-align:center;
+    display: block;
+    margin: 15px auto;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    width:40px;
+    height:40px;
 }
 .home header .burger-menu i{
     background-color:var(--color-azul);
@@ -51,12 +82,25 @@
     border-radius:5px;
 }
 
+.home main{
+    width:100%;
+    text-align:center;
+}
 .home main .banner{
-    display:none;
+    width:100%;
+    display:block;
 }
 .home main article{
+    width:100%;
     background-color:white;
     margin:10px;
+    text-align:center;
+
+}
+.home main article .caja{
+    border-top:solid 1px var(--color-gris-claro);
+    padding:15px;
+    display:block;
 }
 
 .home main h2{
@@ -72,6 +116,7 @@
 }
 .home main h3{
     font-size:var(--tam-descripcion);
+    display:none;
 }
 .home main .imagen-producto{
     width:300px;
@@ -92,3 +137,21 @@
     color:var(--color-azul);
     margin-bottom:10px;
 }
+
+ @media(min-width:361px){
+    .home header .site{
+        display:block;
+    }
+    .home header .login{
+        display:block;
+    }
+    .home header .burger-menu{
+        display:none;
+    }
+    .home main h3{
+        display:block;
+    }
+    .home main article .caja{
+        box-shadow:0px 0px 10px rgb(00,100,100);
+    }
+} 
